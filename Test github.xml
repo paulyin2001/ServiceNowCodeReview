@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?><unload unload_date="2020-08-29 04:15:09">
+<sys_remote_update_set action="INSERT_OR_UPDATE">
+<application display_value="Global">global</application>
+<application_name>Global</application_name>
+<application_scope>global</application_scope>
+<application_version/>
+<collisions/>
+<commit_date/>
+<deleted/>
+<description/>
+<inserted/>
+<name>Test github</name>
+<origin_sys_id/>
+<parent display_value=""/>
+<release_date/>
+<remote_base_update_set display_value=""/>
+<remote_parent_id/>
+<remote_sys_id>22f2e1ebdbba5010c6ea1fc7689619d1</remote_sys_id>
+<state>loaded</state>
+<summary/>
+<sys_class_name>sys_remote_update_set</sys_class_name>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2020-08-29 04:15:09</sys_created_on>
+<sys_id>67536dabdbba5010c6ea1fc768961970</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2020-08-29 04:15:09</sys_updated_on>
+<update_set display_value=""/>
+<update_source display_value=""/>
+<updated/>
+</sys_remote_update_set>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_script_include_f613a5ebdbba5010c6ea1fc76896199d</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_script_include"&gt;&lt;sys_script_include action="INSERT_OR_UPDATE"&gt;&lt;access&gt;package_private&lt;/access&gt;&lt;active&gt;true&lt;/active&gt;&lt;api_name&gt;global.TestScriptIncludeGitHub&lt;/api_name&gt;&lt;caller_access/&gt;&lt;client_callable&gt;false&lt;/client_callable&gt;&lt;description/&gt;&lt;name&gt;TestScriptIncludeGitHub&lt;/name&gt;&lt;script&gt;&lt;![CDATA[var TestScriptIncludeGitHub = Class.create();
+TestScriptIncludeGitHub.prototype = {
+    initialize: function() {
+    },
+
+    type: 'TestScriptIncludeGitHub'
+};]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_include&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2020-08-29 04:14:34&lt;/sys_created_on&gt;&lt;sys_id&gt;f613a5ebdbba5010c6ea1fc76896199d&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;TestScriptIncludeGitHub&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_include_f613a5ebdbba5010c6ea1fc76896199d&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2020-08-29 04:14:34&lt;/sys_updated_on&gt;&lt;/sys_script_include&gt;&lt;/record_update&gt;</payload>
+<payload_hash>-1842339314</payload_hash>
+<remote_update_set display_value="Test github">67536dabdbba5010c6ea1fc768961970</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2020-08-29 04:15:09</sys_created_on>
+<sys_id>6b536dabdbba5010c6ea1fc768961970</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>174386c96fa0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2020-08-29 04:15:09</sys_updated_on>
+<table/>
+<target_name>TestScriptIncludeGitHub</target_name>
+<type>Script Include</type>
+<update_domain>global</update_domain>
+<update_guid>cb3325ebb2ba5010748df83fa79572dc</update_guid>
+<update_guid_history>cb3325ebb2ba5010748df83fa79572dc:-1842339314</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+</unload>
