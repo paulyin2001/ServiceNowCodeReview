@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?><unload unload_date="2020-09-08 18:31:11"><sys_remote_update_set action="INSERT_OR_UPDATE"><application display_value="Global">global</application><application_name>Global</application_name><application_scope>global</application_scope><application_version/><collisions/><commit_date/><deleted/><description/><inserted/><name>Git My Stuff v1.1</name><origin_sys_id/><parent/><release_date/><remote_base_update_set/><remote_parent_id/><remote_sys_id>2400088bdb831010c6ea1fc768961900</remote_sys_id><state>loaded</state><summary/><sys_class_name>sys_remote_update_set</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2020-09-08 18:31:11</sys_created_on><sys_id>6c37cc03dbc31010c6ea1fc768961993</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2020-09-08 18:31:11</sys_updated_on><update_set/><update_source/><updated/></sys_remote_update_set><sys_update_xml action="INSERT_OR_UPDATE"><action>INSERT_OR_UPDATE</action><application display_value="Global">global</application><category>customer</category><comments/><name>sys_script_include_c30f385b0f232200275b09bce1050e4d</name><payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_script_include"&gt;&lt;sys_script_include action="INSERT_OR_UPDATE"&gt;&lt;access&gt;package_private&lt;/access&gt;&lt;active&gt;true&lt;/active&gt;&lt;api_name&gt;global.UpdateSetUtil&lt;/api_name&gt;&lt;client_callable&gt;false&lt;/client_callable&gt;&lt;description&gt;Helper class to extract update set - mimics the OOB Export to XML functionality (only exports sys_update_set and sys_update_xml records, not attachments to update sets)..&lt;/description&gt;&lt;name&gt;UpdateSetUtil&lt;/name&gt;&lt;script&gt;&lt;![CDATA[var UpdateSetUtil = Class.create();
+UpdateSetUtil.prototype = {
+	initialize: function() {
+	}, 
+	
+	// We are concatenating several XML files, so we need to strip the XML declarations to maintain the final XML valid
+	_cleanXMLBlock: function(xmlString) {
+		try{
+			xmlString = xmlString.replace(/&lt;\?.*\?&gt;&lt;sys_remote_update_set&gt;/g,"&lt;sys_remote_update_set action=\"INSERT_OR_UPDATE\"&gt;");
+			xmlString = xmlString.replace(/&lt;\?.*\?&gt;&lt;sys_update_xml&gt;/g,"&lt;sys_update_xml action=\"INSERT_OR_UPDATE\"&gt;");
+		}
+		catch(e){}
+		return xmlString;
+	},
+	
+	// Copy the local update set to the retrieved update set table, as a temporary record, from where we will extract it
+	copyUpdateSet: function(sysid){
+		// Get current update set
+		var updateSet = new GlideRecord("sys_update_set");
+		updateSet.get(sysid);
+		
+		// Copy the update set to the retrieved update set table
+		var retrievedUpdateSet = new GlideRecord('sys_remote_update_set');
+		retrievedUpdateSet.initialize();
+		retrievedUpdateSet.description = updateSet.description;
+		retrievedUpdateSet.name = updateSet.name;
+		retrievedUpdateSet.release_date = updateSet.release_date;
+		retrievedUpdateSet.remote_sys_id = updateSet.sys_id;
+		retrievedUpdateSet.application = updateSet.application;
+		// Add scope information if needed
+		var scopeGr = new GlideRecord('sys_scope');
+		scopeGr.get(updateSet.application);
+		if (scopeGr.isValid()) {
+			retrievedUpdateSet.application_name = scopeGr.name;
+			retrievedUpdateSet.application_scope = scopeGr.scope;
+			retrievedUpdateSet.application_version = scopeGr.version;
+		}
+		retrievedUpdateSet.state = "loaded";
+		
+		var returnid = retrievedUpdateSet.insert();
+		
+		// Now iterate through all the customer updates from the original update set and create copies assigned to the new update set
+		var custUpdate = new GlideRecord('sys_update_xml');
+		custUpdate.addQuery('update_set', updateSet.sys_id);
+		custUpdate.query();
+		while(custUpdate.next()) {
+			custUpdate.remote_update_set = returnid; 
+			custUpdate.update_set = '';
+			custUpdate.insert();
+		}
+		
+		return returnid;
+	},
+	
+	// Delete the temporary retrieved update set record - this will also delete the associated update_xml records
+	deleteUpdateSet: function(sysid){
+		var gr = new GlideRecord("sys_remote_update_set");
+		if (gr.get(sysid)){
+			gr.deleteRecord();
+		}
+	},
+	
+	// Build the XML payload of the temporary retrieved update set
+	getUpdateSetPayload: function(sysid){
+		// Start building the XML output
+		var outputStart = "&lt;?xml version=\"1.0\" encoding=\"UTF-8\"?&gt;";
+		var unloadTag = "&lt;unload unload_date=\"" + GlideSysDateUtil.getUMTDateTimeString() + "\"&gt;";
+		var unloadClose = "&lt;/unload&gt;";
+		
+		// Add a cleaned up payload of the update set record itself
+		var updateSetGR = new GlideRecord("sys_remote_update_set");
+		updateSetGR.get(sysid);
+		var xml = new GlideRecordXMLSerializer();
+		var updateSet = new String(xml.serialize(updateSetGR))
+		updateSet = this._cleanXMLBlock(updateSet);
+		
+		var output = outputStart + unloadTag + updateSet;
+		
+		// Add cleaned up payloads of the all the customer updates
+		var custUpdateGR = new GlideRecord("sys_update_xml");
+		custUpdateGR.addQuery("remote_update_set", updateSetGR.sys_id);
+		custUpdateGR.query();
+		while(custUpdateGR.next()){
+			var xmlString = new GlideRecordXMLSerializer();
+			var custUpdate = new String(xmlString.serialize(custUpdateGR));
+			custUpdate = this._cleanXMLBlock(custUpdate);
+			output += custUpdate;
+		}
+		output += unloadClose;
+		return output;
+	},
+	
+	// Main function to copy, extract, and delete the temporary update set
+	copyAndExtract: function(sysid){
+		var tempSysId = this.copyUpdateSet(sysid);
+		var output = this.getUpdateSetPayload(tempSysId);
+		this.deleteUpdateSet(tempSysId); 
+		return output;
+	},
+
+	type: 'UpdateSetUtil'
+};]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_include&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2016-12-12 16:27:26&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;true&lt;/sys_customer_update&gt;&lt;sys_id&gt;c30f385b0f232200275b09bce1050e4d&lt;/sys_id&gt;&lt;sys_mod_count&gt;22&lt;/sys_mod_count&gt;&lt;sys_name&gt;UpdateSetUtil&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_include_c30f385b0f232200275b09bce1050e4d&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2018-09-11 19:17:03&lt;/sys_updated_on&gt;&lt;/sys_script_include&gt;&lt;/record_update&gt;</payload><payload_hash>1696413688</payload_hash><remote_update_set display_value="Git My Stuff v1.1">6c37cc03dbc31010c6ea1fc768961993</remote_update_set><replace_on_upgrade>false</replace_on_upgrade><sys_created_by>admin</sys_created_by><sys_created_on>2020-09-08 18:31:11</sys_created_on><sys_id>2037cc03dbc31010c6ea1fc768961994</sys_id><sys_mod_count>0</sys_mod_count><sys_recorded_at>1746edfb1310000001</sys_recorded_at><sys_updated_by>admin</sys_updated_by><sys_updated_on>2020-09-08 18:31:11</sys_updated_on><table/><target_name>UpdateSetUtil</target_name><type>Script Include</type><update_domain>global</update_domain><update_guid>964c036cb16c6300dea430b1ae14dbbb</update_guid><update_guid_history>964c036cb16c6300dea430b1ae14dbbb:1696413688,ff568fa4036c630006f0c11483e1f5b7:445961132,ac368fa4a56c63005b0e04206cf84d67:587051611,13758b64586c6300aadc9f02e1b25a8e:729170511,d286fc241cb493042ebef7b0f7f79d14:2014617007,6676b42c70b493047d0ccdac14d56153:-1551957135,676becac9b7493045b88c8ddb9ef7fd0:931033713,20d920ac5f74930468f697c4751f66e1:778110948,9d89686c64749304d11bea322df950fa:-2142178492,-1959078612:-1959078612,-1771651493:-1771651493,-605149553:-605149553,-1555021317:-1555021317,-1924241407:-1924241407,-2048902118:-2048902118,91044397:91044397,-1319024755:-1319024755,91044397:91044397,189330978:189330978,655912042:655912042,-551464299:-551464299,1282756693:1282756693,-2039094091:-2039094091</update_guid_history><update_set/><view/></sys_update_xml></unload>
