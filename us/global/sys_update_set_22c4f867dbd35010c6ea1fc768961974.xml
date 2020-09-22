@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?><unload unload_date="2020-09-22 21:25:46">
+<sys_remote_update_set action="INSERT_OR_UPDATE">
+<application display_value="ServiceNowCodeReview">e515ade9db131010c6ea1fc7689619ad</application>
+<application_name>ServiceNowCodeReview</application_name>
+<application_scope>global</application_scope>
+<application_version>1.0.1</application_version>
+<collisions/>
+<commit_date/>
+<deleted/>
+<description/>
+<inserted/>
+<name>ServiceNowCodeReview - 1.0.3</name>
+<origin_sys_id/>
+<parent display_value=""/>
+<release_date/>
+<remote_base_update_set display_value=""/>
+<remote_parent_id/>
+<remote_sys_id>22c4f867dbd35010c6ea1fc768961974</remote_sys_id>
+<state>loaded</state>
+<summary/>
+<sys_class_name>sys_remote_update_set</sys_class_name>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2020-09-22 21:25:46</sys_created_on>
+<sys_id>1a65742bdb175010c6ea1fc768961934</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2020-09-22 21:25:46</sys_updated_on>
+<update_set display_value=""/>
+<update_source display_value=""/>
+<updated/>
+</sys_remote_update_set>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="ServiceNowCodeReview">e515ade9db131010c6ea1fc7689619ad</application>
+<category>customer</category>
+<comments/>
+<name>sys_script_include_ef25e12ddb131010c6ea1fc7689619dc</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_script_include"&gt;&lt;sys_script_include action="INSERT_OR_UPDATE"&gt;&lt;access&gt;package_private&lt;/access&gt;&lt;active&gt;true&lt;/active&gt;&lt;api_name&gt;global.TestScriptInclude&lt;/api_name&gt;&lt;caller_access/&gt;&lt;client_callable&gt;false&lt;/client_callable&gt;&lt;description/&gt;&lt;name&gt;TestScriptInclude&lt;/name&gt;&lt;script&gt;&lt;![CDATA[var TestScriptInclude = Class.create();
+TestScriptInclude.prototype = {
+    initialize: function() {
+		gs.info('hello world');
+    },
+	newFunc: function(){
+		gs.info('here is a new function!');
+	},
+	anotherFunc: function(){
+		gs.info('do nothing');
+	},
+    type: 'TestScriptInclude'
+};]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_include&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2020-09-16 19:46:59&lt;/sys_created_on&gt;&lt;sys_id&gt;ef25e12ddb131010c6ea1fc7689619dc&lt;/sys_id&gt;&lt;sys_mod_count&gt;5&lt;/sys_mod_count&gt;&lt;sys_name&gt;TestScriptInclude&lt;/sys_name&gt;&lt;sys_package display_value="ServiceNowCodeReview" source="e515ade9db131010c6ea1fc7689619ad"&gt;e515ade9db131010c6ea1fc7689619ad&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="ServiceNowCodeReview"&gt;e515ade9db131010c6ea1fc7689619ad&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_include_ef25e12ddb131010c6ea1fc7689619dc&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2020-09-22 21:25:07&lt;/sys_updated_on&gt;&lt;/sys_script_include&gt;&lt;/record_update&gt;</payload>
+<payload_hash>-1229437328</payload_hash>
+<remote_update_set display_value="ServiceNowCodeReview - 1.0.3">1a65742bdb175010c6ea1fc768961934</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2020-09-22 21:25:46</sys_created_on>
+<sys_id>1665742bdb175010c6ea1fc768961935</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>174b7b4b61c0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2020-09-22 21:25:46</sys_updated_on>
+<table/>
+<target_name>TestScriptInclude</target_name>
+<type>Script Include</type>
+<update_domain>global</update_domain>
+<update_guid>0d45702b761750103d4a71049040b6f0</update_guid>
+<update_guid_history>0d45702b761750103d4a71049040b6f0:-1229437328,559d6e0f80131010c41bf135484e2a35:513162820,09eb26cb7c13101024ed50a792a1663f:-907629689,b7a7ea87d5131010ccf43f2752a26f4d:513162820,8594eac3d51310104f98973f859ff53c:-907629689,b845e12d7f131010c1a1c98152e5bce3:1405439139</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="ServiceNowCodeReview">e515ade9db131010c6ea1fc7689619ad</application>
+<category>customer</category>
+<comments/>
+<name>sys_script_client_e33e664fdb131010c6ea1fc768961912</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_script_client"&gt;&lt;sys_script_client action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;applies_extended&gt;false&lt;/applies_extended&gt;&lt;condition/&gt;&lt;description/&gt;&lt;field&gt;active&lt;/field&gt;&lt;global&gt;true&lt;/global&gt;&lt;isolate_script&gt;true&lt;/isolate_script&gt;&lt;messages/&gt;&lt;name&gt;Show message&lt;/name&gt;&lt;order/&gt;&lt;script&gt;&lt;![CDATA[function onLoad() {
+   //Type appropriate comment here, and begin script below
+    alert("Hello Rolandas!");
+	alert('I can add to a new update set in the global scope!');
+	//failed. maybe just to make sure the scope is correct?
+	//add some comments
+}]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_client&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2020-09-21 16:57:03&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;e33e664fdb131010c6ea1fc768961912&lt;/sys_id&gt;&lt;sys_mod_count&gt;4&lt;/sys_mod_count&gt;&lt;sys_name&gt;Show message&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="ServiceNowCodeReview" source="e515ade9db131010c6ea1fc7689619ad"&gt;e515ade9db131010c6ea1fc7689619ad&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="ServiceNowCodeReview"&gt;e515ade9db131010c6ea1fc7689619ad&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_client_e33e664fdb131010c6ea1fc768961912&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2020-09-22 21:24:28&lt;/sys_updated_on&gt;&lt;table&gt;incident&lt;/table&gt;&lt;type&gt;onLoad&lt;/type&gt;&lt;ui_type&gt;0&lt;/ui_type&gt;&lt;view/&gt;&lt;/sys_script_client&gt;&lt;/record_update&gt;</payload>
+<payload_hash>1942419756</payload_hash>
+<remote_update_set display_value="ServiceNowCodeReview - 1.0.3">1a65742bdb175010c6ea1fc768961934</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2020-09-22 21:25:46</sys_created_on>
+<sys_id>1e65742bdb175010c6ea1fc768961934</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>174b7b41e240000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2020-09-22 21:25:46</sys_updated_on>
+<table>incident</table>
+<target_name>Show message</target_name>
+<type>Client Script</type>
+<update_domain>global</update_domain>
+<update_guid>2315fce7a5175010656783aaf2fce582</update_guid>
+<update_guid_history>2315fce7a5175010656783aaf2fce582:1942419756,6f95db8f99931010c40113e162411563:-82115119,0e8e628f1b13101006bab8224413f7d2:563281464,1b5e6e4f74131010f6a8218c12e0c880:-1224233147,ec5eea4fdd131010443b2aee3e9fa439:1319908510</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+</unload>
