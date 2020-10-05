@@ -1,0 +1,14 @@
+{
+  "document": "wf_activity",
+  "document_key": "603b66a7db631010c6ea1fc76896198d",
+  "order": 1660,
+  "sys_class_name": "sys_variable_value",
+  "sys_created_by": "admin",
+  "sys_created_on": "2020-10-05 16:16:04",
+  "sys_id": "2c3b66a7db631010c6ea1fc768961990",
+  "sys_mod_count": 0,
+  "sys_updated_by": "admin",
+  "sys_updated_on": "2020-10-05 16:16:04",
+  "value": "// Set values for the task in this script.  Use the variable 'task' when setting additional values.\r\n// Note: This script is run after the task values are set using the Fields, Template or Values you have specified.\r\n//\r\n// For example:\r\n//     task.short_description = current.short_description;\r\n",
+  "variable": "98b96f90c0a800666b58ec516f330397"
+}

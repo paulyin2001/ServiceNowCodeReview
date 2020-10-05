@@ -1,0 +1,20 @@
+<!-- 
+ * Application : ServiceNowCodeReview
+ * ClassName   : sysevent_email_action
+ * Created On  : 2020-10-05 18:22:48
+ * Created By  : admin
+ * Updated On  : 2020-10-05 18:22:57
+ * Updated By  : admin
+ * URL         : /sysevent_email_action.do?sys_id=8538c363dbe31010c6ea1fc7689619c3
+-->
+The following chat room has been opened:
+
+Room: ${name}
+Description: ${description}
+
+To join, use the following URL: 
+<mail_script>
+  var url = new ChatUtils().getChatRoomURL(current.sys_id, true);
+  template.print('<a href="' + url + '" target="chat_desktop">' + current.name + '</a>');
+</mail_script>
+Password: ${event.parm2} 

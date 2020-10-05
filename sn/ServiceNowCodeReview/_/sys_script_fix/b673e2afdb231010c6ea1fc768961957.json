@@ -1,0 +1,25 @@
+{
+  "active": true,
+  "before": false,
+  "description": "Check if existing classic app is already being used; in that case turn on  (set to true) classic app flag .i.e. glide.ui.m.allow_classic_mobile_app; otherwise set it to false",
+  "flush_cache": true,
+  "name": "Update classic app based on prior usage",
+  "record_for_rollback": false,
+  "run_once": true,
+  "script": {
+    "____see": "sn\\ServiceNowCodeReview\\Fix Script\\active_true\\Update classic app based on prior usage.js"
+  },
+  "sys_class_name": "sys_script_fix",
+  "sys_created_by": "admin",
+  "sys_created_on": "2020-10-05 15:42:21",
+  "sys_id": "b673e2afdb231010c6ea1fc768961957",
+  "sys_mod_count": 0,
+  "sys_name": "Update classic app based on prior usage",
+  "sys_package": "e515ade9db131010c6ea1fc7689619ad",
+  "sys_policy": null,
+  "sys_scope": "e515ade9db131010c6ea1fc7689619ad",
+  "sys_update_name": "sys_script_fix_b673e2afdb231010c6ea1fc768961957",
+  "sys_updated_by": "admin",
+  "sys_updated_on": "2020-10-05 15:42:21",
+  "unloadable": false
+}

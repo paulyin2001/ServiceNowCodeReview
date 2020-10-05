@@ -1,0 +1,21 @@
+{
+  "average_image_color": "#dfb9b5",
+  "chunk_size_bytes": null,
+  "compressed": true,
+  "content_type": "image/png",
+  "file_name": "picture",
+  "hash": null,
+  "image_height": 910,
+  "image_width": 710,
+  "size_bytes": 281163,
+  "size_compressed": 277604,
+  "state": "available",
+  "sys_created_by": "admin",
+  "sys_created_on": "2020-10-05 16:03:14",
+  "sys_id": "a4482ae3db631010c6ea1fc7689619cb",
+  "sys_mod_count": 0,
+  "sys_updated_by": "admin",
+  "sys_updated_on": "2020-10-05 16:03:14",
+  "table_name": "ZZ_YYsc_cat_item",
+  "table_sys_id": "37382ae3db631010c6ea1fc768961959"
+}

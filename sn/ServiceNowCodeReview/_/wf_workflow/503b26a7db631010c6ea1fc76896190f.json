@@ -1,0 +1,21 @@
+{
+  "access": "public",
+  "description": null,
+  "name": "Procurement Process Flow - Mobile - Demo",
+  "preview": null,
+  "sys_class_name": "wf_workflow",
+  "sys_created_by": "admin",
+  "sys_created_on": "2020-10-05 16:16:03",
+  "sys_id": "503b26a7db631010c6ea1fc76896190f",
+  "sys_mod_count": 1,
+  "sys_name": "Procurement Process Flow - Mobile - Demo",
+  "sys_package": "e515ade9db131010c6ea1fc7689619ad",
+  "sys_policy": null,
+  "sys_scope": "e515ade9db131010c6ea1fc7689619ad",
+  "sys_update_name": "wf_workflow_503b26a7db631010c6ea1fc76896190f",
+  "sys_updated_by": "admin",
+  "sys_updated_on": "2020-10-05 16:16:03",
+  "table": "sc_req_item",
+  "template": false,
+  "vars": null
+}

@@ -1,0 +1,20 @@
+{
+  "misc": 0,
+  "order": 300,
+  "question": "40482ae3db631010c6ea1fc76896196b",
+  "rec_misc": 0,
+  "sys_class_name": "question_choice",
+  "sys_created_by": "admin",
+  "sys_created_on": "2020-10-05 16:03:13",
+  "sys_id": "18482ae3db631010c6ea1fc768961995",
+  "sys_mod_count": 0,
+  "sys_name": "Gold",
+  "sys_package": "e515ade9db131010c6ea1fc7689619ad",
+  "sys_policy": null,
+  "sys_scope": "e515ade9db131010c6ea1fc7689619ad",
+  "sys_update_name": "question_choice_18482ae3db631010c6ea1fc768961995",
+  "sys_updated_by": "admin",
+  "sys_updated_on": "2020-10-05 16:03:13",
+  "text": "Gold",
+  "value": "gold"
+}

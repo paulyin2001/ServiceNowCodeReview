@@ -1,0 +1,21 @@
+{
+  "average_image_color": "#233839",
+  "chunk_size_bytes": 2800,
+  "compressed": true,
+  "content_type": "image/jpeg",
+  "file_name": "background_image",
+  "hash": null,
+  "image_height": 670,
+  "image_width": 1440,
+  "size_bytes": 61171,
+  "size_compressed": 33872,
+  "state": "available",
+  "sys_created_by": "admin",
+  "sys_created_on": "2020-10-05 18:12:25",
+  "sys_id": "3cd543afdba31010c6ea1fc7689619ac",
+  "sys_mod_count": 0,
+  "sys_updated_by": "admin",
+  "sys_updated_on": "2020-10-05 18:12:25",
+  "table_name": "ZZ_YYsp_container",
+  "table_sys_id": "78d543afdba31010c6ea1fc7689619ac"
+}

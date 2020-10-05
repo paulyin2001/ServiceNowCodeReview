@@ -1,0 +1,25 @@
+{
+  "active": false,
+  "before": false,
+  "description": "Update cascade rule for task.universal_request",
+  "flush_cache": false,
+  "name": "Update cascade rule task.universal_reque",
+  "record_for_rollback": false,
+  "run_once": true,
+  "script": {
+    "____see": "sn\\ServiceNowCodeReview\\Fix Script\\active_false\\Update cascade rule task.universal_reque.js"
+  },
+  "sys_class_name": "sys_script_fix",
+  "sys_created_by": "admin",
+  "sys_created_on": "2020-10-05 15:43:29",
+  "sys_id": "cfb32aafdb231010c6ea1fc768961990",
+  "sys_mod_count": 0,
+  "sys_name": "Update cascade rule task.universal_reque",
+  "sys_package": "e515ade9db131010c6ea1fc7689619ad",
+  "sys_policy": null,
+  "sys_scope": "e515ade9db131010c6ea1fc7689619ad",
+  "sys_update_name": "sys_script_fix_cfb32aafdb231010c6ea1fc768961990",
+  "sys_updated_by": "admin",
+  "sys_updated_on": "2020-10-05 15:43:29",
+  "unloadable": false
+}

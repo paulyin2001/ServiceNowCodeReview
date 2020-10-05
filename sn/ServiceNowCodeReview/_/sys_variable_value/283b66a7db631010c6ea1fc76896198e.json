@@ -1,0 +1,14 @@
+{
+  "document": "wf_activity",
+  "document_key": "603b66a7db631010c6ea1fc76896198d",
+  "order": 700,
+  "sys_class_name": "sys_variable_value",
+  "sys_created_by": "admin",
+  "sys_created_on": "2020-10-05 16:16:04",
+  "sys_id": "283b66a7db631010c6ea1fc76896198e",
+  "sys_mod_count": 0,
+  "sys_updated_by": "admin",
+  "sys_updated_on": "2020-10-05 16:16:04",
+  "value": null,
+  "variable": "8f68b111c0a800662a07dc10fa198c4f"
+}

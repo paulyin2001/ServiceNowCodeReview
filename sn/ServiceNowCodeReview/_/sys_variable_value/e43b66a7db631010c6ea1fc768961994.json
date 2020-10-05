@@ -1,0 +1,14 @@
+{
+  "document": "wf_activity",
+  "document_key": "e03b66a7db631010c6ea1fc768961993",
+  "order": 1300,
+  "sys_class_name": "sys_variable_value",
+  "sys_created_by": "admin",
+  "sys_created_on": "2020-10-05 16:16:04",
+  "sys_id": "e43b66a7db631010c6ea1fc768961994",
+  "sys_mod_count": 0,
+  "sys_updated_by": "admin",
+  "sys_updated_on": "2020-10-05 16:16:04",
+  "value": "Configure hardware and test system for initial bootup",
+  "variable": "d7f61655c0a8016500793dd16da8beff"
+}

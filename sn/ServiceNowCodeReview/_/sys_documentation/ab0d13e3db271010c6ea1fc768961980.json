@@ -1,0 +1,23 @@
+{
+  "element": "u_first_name",
+  "help": null,
+  "hint": null,
+  "label": "First Name",
+  "language": "en",
+  "name": "u_example_ldap_user",
+  "plural": "First Names",
+  "sys_class_name": "sys_documentation",
+  "sys_created_by": "admin",
+  "sys_created_on": "2020-10-05 19:53:55",
+  "sys_id": "ab0d13e3db271010c6ea1fc768961980",
+  "sys_mod_count": 0,
+  "sys_name": "First Name",
+  "sys_package": "e515ade9db131010c6ea1fc7689619ad",
+  "sys_policy": null,
+  "sys_scope": "e515ade9db131010c6ea1fc7689619ad",
+  "sys_update_name": "sys_documentation_u_example_ldap_user_u_first_name_en",
+  "sys_updated_by": "admin",
+  "sys_updated_on": "2020-10-05 19:53:55",
+  "url": null,
+  "url_target": null
+}

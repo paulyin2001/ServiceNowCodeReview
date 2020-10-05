@@ -1,0 +1,23 @@
+{
+  "is_fulfillment": false,
+  "license_condition": null,
+  "license_model": "none",
+  "license_roles": null,
+  "name": "u_example_ldap_user",
+  "op_delete": true,
+  "op_insert": true,
+  "op_update": true,
+  "owner_condition": null,
+  "sys_class_name": "ua_table_licensing_config",
+  "sys_created_by": "admin",
+  "sys_created_on": "2020-10-05 19:53:55",
+  "sys_id": "ff0d13e3db271010c6ea1fc76896198c",
+  "sys_mod_count": 0,
+  "sys_name": "u_example_ldap_user",
+  "sys_package": "e515ade9db131010c6ea1fc7689619ad",
+  "sys_policy": null,
+  "sys_scope": "e515ade9db131010c6ea1fc7689619ad",
+  "sys_update_name": "ua_table_licensing_config_ff0d13e3db271010c6ea1fc76896198c",
+  "sys_updated_by": "admin",
+  "sys_updated_on": "2020-10-05 19:53:55"
+}

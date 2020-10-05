@@ -1,0 +1,21 @@
+{
+  "class_name": null,
+  "order": 1,
+  "size": 3,
+  "size_lg": null,
+  "size_sm": 6,
+  "size_xs": null,
+  "sp_row": "c1d5c7afdba31010c6ea1fc7689619e5",
+  "sys_class_name": "sp_column",
+  "sys_created_by": "admin",
+  "sys_created_on": "2020-10-05 18:12:26",
+  "sys_id": "41d5c7afdba31010c6ea1fc7689619e7",
+  "sys_mod_count": 0,
+  "sys_name": 1,
+  "sys_package": "e515ade9db131010c6ea1fc7689619ad",
+  "sys_policy": null,
+  "sys_scope": "e515ade9db131010c6ea1fc7689619ad",
+  "sys_update_name": "sp_column_41d5c7afdba31010c6ea1fc7689619e7",
+  "sys_updated_by": "admin",
+  "sys_updated_on": "2020-10-05 18:12:26"
+}

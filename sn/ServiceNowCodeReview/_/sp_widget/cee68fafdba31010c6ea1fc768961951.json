@@ -1,0 +1,42 @@
+{
+  "category": "standard",
+  "client_script": {
+    "____see": "sn\\ServiceNowCodeReview\\Widget\\sp_instance\\Copy of Ticket Conversations-{--none--}\\client_script.js"
+  },
+  "controller_as": "c",
+  "css": ".panel-title {\n  display: inline;\n}\n\n.panel-title-container {\n  display: flex;\n  justify-content: space-between;\n  align-items: center;\n}\n\n.panel-title-icons {\n\n  ul {\n    display: flex;\n    align-items: center;\n    padding: 0;\n    margin: 0;\n  }\n  li {\n    padding: 0;\n    margin: 0;\n\n    .panel-button {\n      display: flex;\n      align-items: center;\n      margin: 0 0 0 15px;\n      line-height: initial;\n\n      &:hover, &:focus {\n        text-decoration: none;\n      }\n    }\n  }\n}\n\n\n.timeline-heading test {\n  float:right;\n}\n\n.timeline-body > p {\n  white-space: pre-wrap;\n  overflow-x: hidden;\n}\n\n.timeline-body ul > li {\n  float: none;\n}\n\n.no-resize {\n  resize: none;\n}\n\n.journal-field-indicator {\n  width: 5px;\n  position: absolute;\n  left: 5px;\n  top: 5px;\n  bottom: 5px;\n  z-index: 3;\n}\n\n.panel-heading {\n  word-wrap: break-word;\n}\n\n.avatar-container {\n  cursor: default;\n}\n\nul {\n  list-style: none;\n}\n\n.overflow-hidden {\n  overflow: hidden;\n}\n\n\n.timeline-badge-wrap {\n  margin: auto;\n  max-width: 115px;\n}\n\n.timeline-badge.success {\n  background-color: $success;\n}\n\n.timeline-badge {\n  position: relative;\n  left:25%;\n  width:50%;\n  padding-bottom:50%;\n  border-radius:50%;\n}\n\n.timeline-badge span{\n  position:absolute;\n  top:50%;\n  left: 50%;\n  transform: translate(-50%, -50%);\n  font-size:13px;\n  color: #fff;\n}\n\n.timeline::before {\n  content: none;\n}\n\n.timeline-before {\n    content: '';\n    position: absolute;\n    top: 0;\n    bottom: 20px;\n    left: 0;\n    right: 50%;\n    border-right: 2px #dee5e7 solid;  \n}\n\n.journal-type {\n \tdisplay: inline-flex;\n  display: -ms-inline-flexbox;\n  flex-wrap: wrap;\n  -webkit-justify-content: flex-end;\n}\n\n.fa-circle {\n  font-size: 4px;\n  padding: 7px;\n}\n\n@media (max-width: 768px) {\n  .timeline-badge-wrap {\n    margin: 0;\n  }\n  .timeline-badge {\n    left: 10%;\n  }\n}\n\n.translation-font {\n  font-size: 12px;\n}\n\n.translate-link {\n  cursor: pointer;\n  @extend .translation-font;\n}\n\n.translation-credits {\n  font-style: italic;\n}\n\n.translation-message {\n  padding-top: 10px;\n  font-size: 14px;\n  white-space: pre-wrap;\n}\n\n.toggle-link-show {\n  display: none;\n}\n\n.translation-credits {\n  font-style: italic;\n}\n\n.translation-icon {\n  width: 12px;\n  height: 12px;\n  padding-right: 4px;\n  @extend .translation-font;\n}\n\n.translation-container {\n  border: 1px solid $well-border;\n  border-radius: 3px;\n  background-color: $well-bg;\n  padding: 10px;\n  color: $text-color;\n  margin-top: 10px;\n  @extend .translation-font;\n}\n\n.translation-delimiter {\n  padding: 7px;\n  @extend .translation-font;\n}\n\n.translate-wrap {\n  white-space: nowrap;\n}\n\t\t",
+  "data_table": "sp_instance",
+  "demo_data": "{\"options\": {\n\t\"sys_id\": -1,\n\t\t\"table\": \"incident\"\n\t}\n}",
+  "description": null,
+  "docs": null,
+  "field_list": null,
+  "has_preview": false,
+  "id": null,
+  "internal": false,
+  "link": {
+    "____see": "sn\\ServiceNowCodeReview\\Widget\\sp_instance\\Copy of Ticket Conversations-{--none--}\\link.js"
+  },
+  "name": "Copy of Ticket Conversations",
+  "option_schema": "[{\"hint\":\"Placeholder text shows selected journal field\",\"name\":\"use_dynamic_placeholder\",\"section\":\"Behavior\",\"label\":\"Use dynamic placeholder\",\"type\":\"boolean\"},{\"hint\":\"Message to show when record has no readable journal field\",\"name\":\"no_readable_journal_field_message\",\"default_value\":\"\",\"section\":\"Presentation\",\"label\":\"No readable journal field message\",\"type\":\"string\"},{\"hint\":\"Enter key behavior is specified by system property (glide.service_portal.comment.enter_adds_newline) unless overridden here\",\"name\":\"enter_key_behavior\",\"section\":\"Behavior\",\"default_value\":\"System property\",\"label\":\"Enter key behavior\",\"type\":\"choice\",\"choices\":[{\"label\":\"System property\",\"value\":\"System property\"},{\"label\":\"Submit\",\"value\":\"Submit\"},{\"label\":\"New line\",\"value\":\"New line\"}]}]",
+  "public": false,
+  "roles": "snc_external,snc_internal",
+  "script": {
+    "____see": "sn\\ServiceNowCodeReview\\Widget\\sp_instance\\Copy of Ticket Conversations-{--none--}\\script.js"
+  },
+  "servicenow": false,
+  "sys_class_name": "sp_widget",
+  "sys_created_by": "admin",
+  "sys_created_on": "2020-10-05 18:17:08",
+  "sys_id": "cee68fafdba31010c6ea1fc768961951",
+  "sys_mod_count": 0,
+  "sys_name": "Copy of Ticket Conversations",
+  "sys_package": "e515ade9db131010c6ea1fc7689619ad",
+  "sys_policy": null,
+  "sys_scope": "e515ade9db131010c6ea1fc7689619ad",
+  "sys_update_name": "sp_widget_cee68fafdba31010c6ea1fc768961951",
+  "sys_updated_by": "admin",
+  "sys_updated_on": "2020-10-05 18:17:08",
+  "template": {
+    "____see": "sn\\ServiceNowCodeReview\\Widget\\sp_instance\\Copy of Ticket Conversations-{--none--}\\template.xhtml"
+  }
+}

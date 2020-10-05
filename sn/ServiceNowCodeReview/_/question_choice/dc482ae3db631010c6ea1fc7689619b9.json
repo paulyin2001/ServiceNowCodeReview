@@ -1,0 +1,20 @@
+{
+  "misc": 0,
+  "order": 200,
+  "question": "cc482ae3db631010c6ea1fc768961989",
+  "rec_misc": 0,
+  "sys_class_name": "question_choice",
+  "sys_created_by": "admin",
+  "sys_created_on": "2020-10-05 16:03:13",
+  "sys_id": "dc482ae3db631010c6ea1fc7689619b9",
+  "sys_mod_count": 0,
+  "sys_name": "Yes",
+  "sys_package": "e515ade9db131010c6ea1fc7689619ad",
+  "sys_policy": null,
+  "sys_scope": "e515ade9db131010c6ea1fc7689619ad",
+  "sys_update_name": "question_choice_dc482ae3db631010c6ea1fc7689619b9",
+  "sys_updated_by": "admin",
+  "sys_updated_on": "2020-10-05 16:03:13",
+  "text": "Yes",
+  "value": "Yes"
+}

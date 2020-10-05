@@ -1,0 +1,21 @@
+{
+  "activity": "a43b66a7db631010c6ea1fc76896199b",
+  "condition": "activity.result == 'yes'",
+  "condition_default": null,
+  "condition_type": "standard",
+  "else_flag": false,
+  "error": false,
+  "event": false,
+  "event_name": null,
+  "is_positive": false,
+  "name": "Yes",
+  "order": 1,
+  "short_description": null,
+  "skip_during_generate": false,
+  "sys_created_by": "admin",
+  "sys_created_on": "2020-10-05 16:16:04",
+  "sys_id": "283b66a7db631010c6ea1fc76896199c",
+  "sys_mod_count": 0,
+  "sys_updated_by": "admin",
+  "sys_updated_on": "2020-10-05 16:16:04"
+}

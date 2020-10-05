@@ -1,0 +1,21 @@
+{
+  "caller_access": null,
+  "description": "Fired when a temporary table has expired",
+  "event_name": "report.import.expire_on_date.expired",
+  "fired_by": "[Reporting]  Import Tables expired",
+  "queue": null,
+  "suffix": null,
+  "sys_class_name": "sysevent_register",
+  "sys_created_by": "admin",
+  "sys_created_on": "2020-10-05 18:25:09",
+  "sys_id": "d7b84f63dbe31010c6ea1fc76896191e",
+  "sys_mod_count": 0,
+  "sys_name": "report.import.expire_on_date.expired",
+  "sys_package": "e515ade9db131010c6ea1fc7689619ad",
+  "sys_policy": null,
+  "sys_scope": "e515ade9db131010c6ea1fc7689619ad",
+  "sys_update_name": "sysevent_register_d7b84f63dbe31010c6ea1fc76896191e",
+  "sys_updated_by": "admin",
+  "sys_updated_on": "2020-10-05 18:25:09",
+  "table": "sys_report_import_table"
+}

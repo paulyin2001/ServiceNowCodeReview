@@ -1,0 +1,14 @@
+{
+  "document": "wf_activity",
+  "document_key": "543b66a7db631010c6ea1fc768961967",
+  "order": 2000,
+  "sys_class_name": "sys_variable_value",
+  "sys_created_by": "admin",
+  "sys_created_on": "2020-10-05 16:16:03",
+  "sys_id": "5c3b66a7db631010c6ea1fc768961969",
+  "sys_mod_count": 0,
+  "sys_updated_by": "admin",
+  "sys_updated_on": "2020-10-05 16:16:03",
+  "value": "// Set 'answer' to the number of seconds this timer should wait\r\nanswer = 0;",
+  "variable": "8f79bbdbc0a80066479b2d5ea4863c24"
+}

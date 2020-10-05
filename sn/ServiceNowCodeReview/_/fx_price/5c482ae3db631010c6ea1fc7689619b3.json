@@ -1,0 +1,17 @@
+{
+  "amount": 1,
+  "currency": "USD",
+  "field": "rec_misc",
+  "id": "14482ae3db631010c6ea1fc7689619b3",
+  "parent": null,
+  "reference_amount": 1,
+  "reference_currency": "USD",
+  "sys_created_by": "admin",
+  "sys_created_on": "2020-10-05 16:03:13",
+  "sys_id": "5c482ae3db631010c6ea1fc7689619b3",
+  "sys_mod_count": 0,
+  "sys_updated_by": "admin",
+  "sys_updated_on": "2020-10-05 16:03:13",
+  "table": "question_choice",
+  "type": "calculated"
+}

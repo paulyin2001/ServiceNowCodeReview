@@ -1,0 +1,13 @@
+{
+  "name": "Fulfillment",
+  "ola": "1970-01-01 00:00:00",
+  "order": 20,
+  "sys_created_by": "admin",
+  "sys_created_on": "2020-10-05 16:16:03",
+  "sys_id": "183b66a7db631010c6ea1fc768961963",
+  "sys_mod_count": 0,
+  "sys_updated_by": "admin",
+  "sys_updated_on": "2020-10-05 16:16:03",
+  "value": "fulfillment",
+  "workflow_version": "543b26a7db631010c6ea1fc768961910"
+}

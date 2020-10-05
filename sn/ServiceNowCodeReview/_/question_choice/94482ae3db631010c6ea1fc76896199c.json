@@ -1,0 +1,20 @@
+{
+  "misc": 0,
+  "order": 100,
+  "question": "8c482ae3db631010c6ea1fc768961970",
+  "rec_misc": 0,
+  "sys_class_name": "question_choice",
+  "sys_created_by": "admin",
+  "sys_created_on": "2020-10-05 16:03:13",
+  "sys_id": "94482ae3db631010c6ea1fc76896199c",
+  "sys_mod_count": 0,
+  "sys_name": "16GB",
+  "sys_package": "e515ade9db131010c6ea1fc7689619ad",
+  "sys_policy": null,
+  "sys_scope": "e515ade9db131010c6ea1fc7689619ad",
+  "sys_update_name": "question_choice_94482ae3db631010c6ea1fc76896199c",
+  "sys_updated_by": "admin",
+  "sys_updated_on": "2020-10-05 16:03:13",
+  "text": "16GB",
+  "value": "sixteen"
+}

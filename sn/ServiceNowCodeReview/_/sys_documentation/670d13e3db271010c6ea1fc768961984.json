@@ -1,0 +1,23 @@
+{
+  "element": "u_user_id",
+  "help": null,
+  "hint": null,
+  "label": "User ID",
+  "language": "en",
+  "name": "u_example_ldap_user",
+  "plural": "User IDs",
+  "sys_class_name": "sys_documentation",
+  "sys_created_by": "admin",
+  "sys_created_on": "2020-10-05 19:53:55",
+  "sys_id": "670d13e3db271010c6ea1fc768961984",
+  "sys_mod_count": 0,
+  "sys_name": "User ID",
+  "sys_package": "e515ade9db131010c6ea1fc7689619ad",
+  "sys_policy": null,
+  "sys_scope": "e515ade9db131010c6ea1fc7689619ad",
+  "sys_update_name": "sys_documentation_u_example_ldap_user_u_user_id_en",
+  "sys_updated_by": "admin",
+  "sys_updated_on": "2020-10-05 19:53:55",
+  "url": null,
+  "url_target": null
+}
