@@ -1,0 +1,24 @@
+{
+  "access": "package_private",
+  "active": true,
+  "api_name": "global.testSI",
+  "caller_access": null,
+  "client_callable": false,
+  "description": null,
+  "name": "testSI",
+  "script": {
+    "____see": "sn\\ServiceNowCodeReview\\Script Include\\active_true\\global.testSI.js"
+  },
+  "sys_class_name": "sys_script_include",
+  "sys_created_by": "admin",
+  "sys_created_on": "2021-06-15 20:36:43",
+  "sys_id": "1301e2051bf03010625cdc6cdc4bcb3c",
+  "sys_mod_count": 0,
+  "sys_name": "testSI",
+  "sys_package": "55c02ac11bf03010625cdc6cdc4bcbb9",
+  "sys_policy": null,
+  "sys_scope": "55c02ac11bf03010625cdc6cdc4bcbb9",
+  "sys_update_name": "sys_script_include_1301e2051bf03010625cdc6cdc4bcb3c",
+  "sys_updated_by": "admin",
+  "sys_updated_on": "2021-06-15 20:36:43"
+}
