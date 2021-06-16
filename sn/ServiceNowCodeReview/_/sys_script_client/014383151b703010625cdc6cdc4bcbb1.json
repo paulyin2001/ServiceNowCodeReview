@@ -1,0 +1,31 @@
+{
+  "active": true,
+  "applies_extended": false,
+  "condition": null,
+  "description": null,
+  "field": "application",
+  "global": true,
+  "isolate_script": true,
+  "messages": null,
+  "name": "basic alert",
+  "order": null,
+  "script": {
+    "____see": "sn\\ServiceNowCodeReview\\Client Script\\sys_update_set\\active_true\\basic alert.js"
+  },
+  "sys_class_name": "sys_script_client",
+  "sys_created_by": "admin",
+  "sys_created_on": "2021-06-16 17:44:59",
+  "sys_id": "014383151b703010625cdc6cdc4bcbb1",
+  "sys_mod_count": 1,
+  "sys_name": "basic alert",
+  "sys_package": "55c02ac11bf03010625cdc6cdc4bcbb9",
+  "sys_policy": null,
+  "sys_scope": "55c02ac11bf03010625cdc6cdc4bcbb9",
+  "sys_update_name": "sys_script_client_014383151b703010625cdc6cdc4bcbb1",
+  "sys_updated_by": "admin",
+  "sys_updated_on": "2021-06-16 17:51:02",
+  "table": "sys_update_set",
+  "type": "onLoad",
+  "ui_type": 0,
+  "view": null
+}
