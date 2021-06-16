@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?><unload unload_date="2021-06-16 19:35:07">
+<sys_remote_update_set action="INSERT_OR_UPDATE">
+<application display_value="ServiceNowCodeReview">55c02ac11bf03010625cdc6cdc4bcbb9</application>
+<application_name>ServiceNowCodeReview</application_name>
+<application_scope>global</application_scope>
+<application_version>1.0.0</application_version>
+<collisions/>
+<commit_date/>
+<deleted/>
+<description/>
+<inserted/>
+<name>ServiceNowCodeReview - 1.0.4</name>
+<origin_sys_id/>
+<parent display_value=""/>
+<release_date/>
+<remote_base_update_set display_value=""/>
+<remote_parent_id/>
+<remote_sys_id>fb5c9fd11bb03010625cdc6cdc4bcb3b</remote_sys_id>
+<state>loaded</state>
+<summary/>
+<sys_class_name>sys_remote_update_set</sys_class_name>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2021-06-16 19:35:06</sys_created_on>
+<sys_id>289c579ddb7c3010decdd2984b961928</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2021-06-16 19:35:06</sys_updated_on>
+<update_set display_value=""/>
+<update_source display_value=""/>
+<updated/>
+</sys_remote_update_set>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="ServiceNowCodeReview">55c02ac11bf03010625cdc6cdc4bcbb9</application>
+<category>customer</category>
+<comments/>
+<name>sys_script_client_014383151b703010625cdc6cdc4bcbb1</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_script_client"&gt;&lt;sys_script_client action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;applies_extended&gt;false&lt;/applies_extended&gt;&lt;condition/&gt;&lt;description/&gt;&lt;field&gt;application&lt;/field&gt;&lt;global&gt;true&lt;/global&gt;&lt;isolate_script&gt;true&lt;/isolate_script&gt;&lt;messages/&gt;&lt;name&gt;basic alert&lt;/name&gt;&lt;order/&gt;&lt;script&gt;&lt;![CDATA[function onLoad() {
+    //Type appropriate comment here, and begin script below
+    alert('hello world!!!');
+}]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_client&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-06-16 17:44:59&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;014383151b703010625cdc6cdc4bcbb1&lt;/sys_id&gt;&lt;sys_mod_count&gt;2&lt;/sys_mod_count&gt;&lt;sys_name&gt;basic alert&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="ServiceNowCodeReview" source="55c02ac11bf03010625cdc6cdc4bcbb9"&gt;55c02ac11bf03010625cdc6cdc4bcbb9&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="ServiceNowCodeReview"&gt;55c02ac11bf03010625cdc6cdc4bcbb9&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_client_014383151b703010625cdc6cdc4bcbb1&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-06-16 19:34:32&lt;/sys_updated_on&gt;&lt;table&gt;sys_update_set&lt;/table&gt;&lt;type&gt;onLoad&lt;/type&gt;&lt;ui_type&gt;0&lt;/ui_type&gt;&lt;view/&gt;&lt;/sys_script_client&gt;&lt;/record_update&gt;</payload>
+<payload_hash>-1268400267</payload_hash>
+<remote_update_set display_value="ServiceNowCodeReview - 1.0.4">289c579ddb7c3010decdd2984b961928</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2021-06-16 19:35:06</sys_created_on>
+<sys_id>2c9c579ddb7c3010decdd2984b961928</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>17a16516cb20000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2021-06-16 19:35:06</sys_updated_on>
+<table>sys_update_set</table>
+<target_name>basic alert</target_name>
+<type>Client Script</type>
+<update_domain>global</update_domain>
+<update_guid>d47cd3151eb0301075d1c10c87a5ea09</update_guid>
+<update_guid_history>d47cd3151eb0301075d1c10c87a5ea09:-1268400267,84c44f5575703010a4bf376ea51e5dc2:1900346925,9f5383150170301070eff86ce475a984:-216678576</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+</unload>
